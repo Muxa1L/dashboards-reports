@@ -169,7 +169,7 @@ export function ReportSettings(props: ReportSettingProps) {
       reportDefinitionRequest.report_params.core_params.saved_search_id =
         savedSearches[0]?.value;
       reportDefinitionRequest.report_params.core_params.report_format = 'csv';
-      reportDefinitionRequest.report_params.core_params.limit = 100000;
+      reportDefinitionRequest.report_params.core_params.limit = 1000000;
       reportDefinitionRequest.report_params.core_params.excel = true;
     } else if (e === 'notebooksReportSource') {
       reportDefinitionRequest.report_params.report_source = 'Notebook';
